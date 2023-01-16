@@ -23,7 +23,7 @@ public class Game {
 
             if (result.equals("kill")) {
                 isAlive = false;
-                System.out.println("You took " + numOfGueses + "guesses");
+                System.out.println("You took " + numOfGueses + " guesses");
             }
         }
 
