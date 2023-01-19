@@ -5,7 +5,16 @@ public class GameHelper {
     
     public int getUserInput (String prompt) {
         System.out.print(prompt + ": ");
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
+        try (Scanner scanner = new Scanner(System.in)) {
+            return scanner.nextInt();
+        }
     }
 }
+
+// Old implementation
+// public int getUserInput (String prompt) {
+//     System.out.print(prompt + ": ");
+//     Scanner scanner = new Scanner(System.in);
+//     return scanner.nextInt();
+// }
+// }
