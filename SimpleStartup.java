@@ -1,3 +1,5 @@
+//Old code - version 1 of Startup.java
+
 package Battleships;
 
 public class SimpleStartup {
@@ -17,6 +19,7 @@ public class SimpleStartup {
         for (int cell: locationCells) {
             // Compare the user guess to this element (cell) in the array
             if (guess == cell) {
+
                 result = "hit";
                 numOfHits++;
                 break; // Get out of the loop, no need to test the other cells
